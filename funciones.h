@@ -1,6 +1,3 @@
-// funciones.h
-
-
 struct Jugador {
     char nombre[30];
     int golesTotales;
