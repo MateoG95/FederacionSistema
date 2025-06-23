@@ -251,3 +251,7 @@ void verResultadosTorneo(struct Partido partidos[], int totalPartidos) {
     }
     fclose(f);
 }
+
+    }
+    fclose(f);
+}
