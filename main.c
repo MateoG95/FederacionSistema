@@ -6,9 +6,9 @@ int main() {
     struct Equipo equipos[4];
     struct Partido partidos[10];
     int totalPartidos = 0;
-    int cargado = 0;
     int opc;
-    
+
+    cargarEquipos(equipos);
 
     printf("========================================\n");
     printf("     SISTEMA DE LA FEDERACION EFC       \n");
@@ -16,27 +16,27 @@ int main() {
 
     do {
         opc = menu();
-        switch(opc) {
+        switch (opc) {
             case 1:
-                printf("Los equipos ya estan precargados.\n");
+                printf("Los equipos ya están precargados.\n");
                 break;
             case 2:
-                verEquipos(equipos); // corregido
+                verEquipos(equipos);
                 break;
             case 3:
-                registrarPartido(partidos, &totalPartidos, equipos); // corregido
+                registrarPartido(partidos, &totalPartidos, equipos);
                 break;
             case 4:
                 listarPartidos(partidos, totalPartidos);
                 break;
             case 5:
-                buscarEquipo(equipos); // corregido
+                buscarEquipo(equipos);
                 break;
             case 6:
                 verGoleadorPartido(partidos, totalPartidos);
                 break;
             case 7:
-                verGoleadorTorneo(equipos); // corregido
+                verGoleadorTorneo(equipos);
                 break;
             case 8:
                 guardarTorneo(equipos, partidos, totalPartidos);
@@ -48,7 +48,7 @@ int main() {
                 printf("Saliendo del sistema...\n");
                 break;
             default:
-                printf("Opcion invalida.\n");
+                printf("Opción inválida.\n");
         }
     } while (opc != 10);
 
