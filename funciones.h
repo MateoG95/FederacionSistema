@@ -1,3 +1,4 @@
+// funciones.h
 
 
 struct Jugador {
@@ -19,7 +20,8 @@ struct Partido {
     int totalGoleadores;
 };
 
-void guardarEquipos(struct Equipo equipos[4]);
+// Prototipos de funciones
+int menu();
 void cargarEquipos(struct Equipo equipos[4]);
 void verEquipos(struct Equipo equipos[4]);
 void registrarPartido(struct Partido partidos[], int *cont, struct Equipo equipos[4]);
@@ -29,4 +31,3 @@ void verGoleadorPartido(struct Partido partidos[], int total);
 void verGoleadorTorneo(struct Equipo equipos[4]);
 void guardarTorneo(struct Equipo equipos[4], struct Partido partidos[], int totalPartidos);
 void verResultadosTorneo(struct Partido partidos[], int totalPartidos);
-int menu();
